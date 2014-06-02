@@ -48,9 +48,13 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brushstroke-left.png">
 					</div>
 				</div>
-				<div class="Toggle-btn-wrap">
-					<a href="#" id="js-navCollapse" class="Nav-dropdown-btn">Menu</a>
+				
+				<div class="Nav-toggle">
+					<a class="Navigation-menuToggle" id="js-navCollapse">
+						<img src="" class="menu">
+					</a>
 				</div>
+				
 				<div class="Toggle-bar right">
 					<div class="Nav-rightstroke">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brushstroke-right.png">
@@ -75,7 +79,7 @@
 					</div>
 				</div>
 				
-				<div class="Nav-menu">
+				<div class="Nav-menu" id="js-navCollapseTarget">
 				    <?php include 'includes/navigation.php'; ?>
 				</div>
 			</div>
