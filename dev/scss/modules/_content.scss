@@ -1,0 +1,51 @@
+// *************************************
+//
+// Content
+// -> Main site Content
+//
+// *************************************
+
+.home-title {
+    color: white;
+    width: auto;
+    background-color: #8B0000;
+    height: 65px;
+    padding: 0px 15px;
+    line-height: 65px;
+    p {
+	    font-size: 26px;	    
+    }
+}
+
+.home-content {
+	background-color: white;
+	padding: 10px 30px;
+	margin-top: 15px;
+}
+
+.bottom-block {
+	background-color: red;
+	padding: 10px;
+	float: right;
+}
+
+
+//=============================================================
+//                  	@media queries
+//=============================================================
+
+@media all and (max-width:980) {
+	
+}
+
+
+
+//=============================================================
+//                  Page specific adjustments
+//=============================================================
+
+.page-id-5 {
+	.page-title {
+		display: none;
+	}
+}

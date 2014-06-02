@@ -1,0 +1,312 @@
+// *************************************
+//
+// Navigation
+// -> Reusable navigation module
+//
+// *************************************
+
+.Navigation {
+  text-align: center;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+.Navigation-link.is-active {
+  text-decoration: underline;
+}
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- List item ----- //
+
+.Navigation-listItem {
+  display: inline;
+  margin: 0 rem(15px);
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+// ----- Navigation link ----- //
+
+.Navigation-link {
+  text-transform: uppercase;
+}
+
+.Navigation-link--invertedBold {
+  color: $c-white; 
+  font-weight: bold;
+}
+
+
+body {
+	background-color: #787878 !important;
+}
+
+
+
+.Nav-wrapper {
+	background-color: rgba(255,255,255,0.15);
+	position: relative;
+	height: 180px;
+	padding-top: 1px;
+
+
+	.Nav-mid-wrapper {
+		background-color: white;
+		position: absolute;
+		height: 65px;
+		top: 50px;
+		z-index: 100;
+		width: 25%;
+
+		.logo-text {	
+			position: relative;
+			z-index: 200;			
+			a,p {
+				color: black;
+				font-size: 25px;
+				line-height: 10px;
+				font-weight: 200;
+			}				
+		}
+		
+		.logo-name-span {	
+			margin-left: 5px;
+		}
+	} /* -- Nav-mid-wrapper -- */
+	
+	.Nav-mid-wrapper.inner {
+		position: absolute;
+		z-index: 100;
+		width: 28%;
+		top: 50;
+	}
+	
+	.Nav-mid-wrapper.right {
+		position: absolute;
+		right: 0;
+		width: 5%;
+	}
+	
+	.Nav-leftstroke {
+		position: absolute;
+		height: 65px;
+		right: -50px;
+		top: 0;
+		
+		img {
+			height: 65px;
+		}
+	}
+	
+	.Nav-rightstroke {
+		position: absolute;
+		height: 65px;
+		left: -50px;
+		top: 0;
+		
+		img {
+			height: 65px;
+		}
+	}
+	
+	.Nav-menu {
+		float: right;
+		margin-top: 55px;
+		padding-right: 7%;
+		
+		.Navigation-link {
+			color: white;
+			background-color: red;
+			padding: 135px 16px 16px;
+			font-size: 12px;
+
+		}
+
+		.Navigation-listItem {
+			margin: 0 5px;
+		}
+	}
+}/*-- Nav-wrapper --*/
+
+
+.Nav-inner-leftWrap {
+	background-color: white;
+	margin-top: 50px;
+	
+}
+
+
+
+#js-navCollapse {
+	display: none;
+}
+
+
+
+
+
+.Toggle-wrap {
+	display: none;
+	height: 40px;
+	margin-top: 135px;
+	
+	.Toggle-bar {
+		background-color: white;
+		height: 40px;
+		width: 40%;
+	}
+	.Toggle-bar.left{
+		float: left;
+		position: relative;
+
+		.Nav-leftstroke {
+			position: absolute;
+			height: 40px;
+			right: -20px;
+			top: 0;
+			img {
+				height: 40px;
+			}
+		}
+	}
+
+	.Toggle-bar.right {
+		float: right;
+		position: relative;
+
+		.Nav-rightstroke {
+			position: absolute;
+			height: 40px;
+			left: -20px;
+			top: 0;
+			img {
+				height: 40px;
+			}
+		}
+	}
+}
+
+
+
+.Nav-collapse-btn {
+	height: 40px;
+	padding: 10px;
+	background-color: #fafafa;
+	color: red;
+}
+
+//=============================================================
+//                  	@media queries
+//=============================================================
+
+// ------------------  NAV-wrapp media queries  --------------------
+
+@media all and (min-width:1400px) {
+	.Nav-wrapper .Nav-mid-wrapper.right {
+		width: 16%;
+	}
+}
+
+@media all and (max-width:1400px) {
+	.Nav-wrapper .Nav-mid-wrapper.right {
+		width: 12%;
+	}
+}
+
+@media all and (max-width:1250px) {
+	.Nav-wrapper .Nav-mid-wrapper.right {
+		width: 8%;
+	}
+	
+	.Nav-wrapper .Nav-mid-wrapper.inner {
+		width: 30%;
+	}
+}
+
+@media all and (max-width:1150px) {
+	.Nav-wrapper .Nav-mid-wrapper.inner {
+		width: 34%;
+	}
+}
+
+
+@media all and (max-width:1100px) {
+	.Nav-wrapper .Nav-menu {
+		padding-right: 9%;
+	}
+}
+
+@media all and (max-width:1060px) {
+	.Nav-wrapper .Nav-menu {
+		padding-right: 12%;
+	}
+}
+
+@media all and (max-width:1000px) {
+	.Nav-wrapper .Nav-menu {
+		padding-right: 13%;
+	}
+}
+
+// ------------------  NAV-wrapp media queries  --------------------
+
+@media all and (max-width:1000px) {
+	.Nav-wrapper {
+		height: auto;
+		padding-bottom: 20px;
+		.Nav-menu {
+			background-color: white;
+			padding: 0 25px;
+			border-radius: 20px;
+			width: 100%;
+			margin-top: 20px;
+			
+			.Navigation-link {
+				padding: 10px 0;
+				font-size: 16px;
+				display: block;
+				border-radius: 10px;
+			}
+		}
+		
+		.Nav-mid-wrapper.inner {
+			width: 100%;
+		}
+		.Navigation-list {
+			margin: 0;
+		}
+	}
+	
+	.Toggle-wrap {
+		display: block;
+	}
+	
+	.Nav-inner-leftWrap {
+		margin-top: 0;
+	}
+}
