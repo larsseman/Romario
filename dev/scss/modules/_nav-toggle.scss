@@ -5,9 +5,9 @@
 //
 // *************************************
 
-.Navigation-menuToggle {
+.Navigation-menuToggle  {
   display: block;
-  @media all and (min-width: 980px) {
+  @media all and (min-width: 1000px) {
     display: none;
   }
 }
@@ -30,3 +30,9 @@
 	}
 }
 
+
+#js-navCollapseTarget {
+  @media all and (max-width: 1000px) {
+    display: none;
+  }
+}

@@ -79,7 +79,7 @@
 					</div>
 				</div>
 				
-				<div class="Nav-menu" id="js-navCollapseTarget">
+				<div class="Nav-menu">
 				    <?php include 'includes/navigation.php'; ?>
 				</div>
 			</div>
