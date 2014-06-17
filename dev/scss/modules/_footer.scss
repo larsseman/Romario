@@ -1,0 +1,119 @@
+// *************************************
+//
+// Footer
+// -> Main footer
+//
+// *************************************
+
+
+.Footer {
+	background-color: white;
+	padding-bottom: 20px; 
+
+	.widget {
+		float: left;
+		padding: 0 2%;
+	}
+
+	.widgettitle {
+		margin-bottom: 20px;
+	}	
+	
+	.textwidget {
+		line-height: 10px;
+	}
+}
+
+#text-2, #text-3 {
+	@include span-columns(4);
+}
+#nav_menu-2 {
+	@include span-columns(3);
+} 
+
+.menu {
+	select {
+		background-color: #fafafa;
+		border: 1px solid #051542;
+		border-radius: 8px;
+		font-size: 12px;
+		padding: 3px 3px 3px 13px;
+		color: #123452;
+		width: 120px;
+	}
+}
+
+
+
+
+.copyright {
+	p {
+		margin: 0;
+		line-height: 35px;
+		text-align: center;
+		color: white;
+	}
+	
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+
+//---------------------------------------------------------
+.page-id-5 {
+	body {
+		background: rgba(140,0,0,1) !important;	
+	}
+	
+	.Footer {
+		border-top: 5px solid rgba(140,0,0,1);
+	}
+	
+	.copyright {
+		background-color: rgba(140,0,0,1);
+	}
+}
+
+.page-id-7 {
+	body {
+		background-color: rgba(59,28,29,1) !important;
+	}
+	
+	.Footer {
+		border-top: 5px solid rgba(59,28,29,1);
+	}
+	
+	.copyright {
+		background-color: rgba(59,28,29,1);
+	}
+}
+
+.page-id-9 {
+	body {
+		background-color: rgba(5,22,67,1) !important;
+	}	
+	
+	.Footer {
+		border-top: 5px solid rgba(5,22,67,1);
+	}
+	
+	.copyright {
+		background-color: rgba(5,22,67,1);
+	}
+}
+
+.page-id-11 {
+	body {
+		background-color: rgba(18,54,39,1) !important;
+	}
+	
+	.Footer {
+		border-top: 5px solid rgba(18,54,39,1);
+	}
+	
+	.copyright {
+		background-color: rgba(18,54,39,1);
+	}
+}

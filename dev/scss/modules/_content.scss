@@ -4,31 +4,154 @@
 // -> Main site Content
 //
 // *************************************
+body {
+	background-image: url('../img/home_image.jpg');
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-color: white !important;
+}
 
+p {
+	font-weight: 200;
+}
+
+
+//-------------------------------------------
+.rood {
+	background-color: rgba(140,0,0,1);
+}
+
+.bruin {
+	background-color: rgba(59,28,29,1);
+}
+
+.blauw {
+	background-color: rgba(5,22,67,1);
+}
+
+.groen {
+	background-color: rgba(18,54,39,1);
+}
+
+
+//=====
+
+.roodig {
+	background-color: rgba(140,0,0,0.8);
+}
+
+.bruinig {
+	background-color: rgba(59,28,29,0.9);
+}
+
+.blauwig {
+	background-color: rgba(5,22,67,0.8);
+}
+
+.groenig {
+	background-color: rgba(18,54,39,0.8);
+}
+//--------------------------------------------
 .home-title {
     color: white;
     width: auto;
-    background-color: #8B0000;
     height: 65px;
     padding: 0px 15px;
     line-height: 65px;
-    p {
+    p,h2 {
 	    font-size: 26px;	    
+	    font-weight: 400;
     }
 }
 
 .home-content {
-	background-color: white;
+    background-color: rgba(255,255,255,0.8);
 	padding: 10px 30px;
 	margin-top: 15px;
 }
 
 .bottom-block {
-	background-color: red;
-	padding: 10px;
 	float: right;
+	padding: 0 20px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	line-height: 20px;
+	p {
+		font-size: 15px;
+		color: white;
+	}
 }
 
+.white-wrapper {
+	background-color: rgba(255,255,255,0.8);
+	padding: 25px;
+	margin-top: 15px;
+}
+
+.adress-info {
+	padding-left: 20px;
+}
+
+#map_canvas {
+	border: 1px solid black;
+	width: 100%;
+	height: 170px;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+.adress {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+
+// ------------ form styles --------------
+
+label.gfield_label {
+	font-weight: 400 !important;
+	font-size: 11px;
+	letter-spacing: 0.5pt;
+}
+
+input.gform_button {
+	background-color: #fafafa;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 5px 10px;
+	color: black;
+	
+	&:hover {
+		color: white;
+		background-color: #123627;
+		border: 1px solid #123627;
+	
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+}
+
+.ginput_container {		
+	input, textarea {
+		background-color: #fafafa;
+		border-radius: 7px;
+		border: 1px solid black;
+		color: black;
+		font-size: 14px !important;
+	}
+}
+//----------------------------------------
+
+
+.linky {
+	margin-top: -12px;
+	a {
+		color: $c-red !important;
+		font-size: 13px;
+	}
+}
 
 //=============================================================
 //                  	@media queries
@@ -39,7 +162,6 @@
 }
 
 
-
 //=============================================================
 //                  Page specific adjustments
 //=============================================================
@@ -47,5 +169,11 @@
 .page-id-5 {
 	.page-title {
 		display: none;
+	}
+}
+
+.page-id-11 {
+	.white-wrapper {
+		margin-bottom: 40px !important;
 	}
 }

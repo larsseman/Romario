@@ -34,7 +34,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <!-- /build -->
 
+
     <!-- Wordpress head function -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ 
     <?php wp_head(); ?>
 
   </head>

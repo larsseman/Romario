@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: temp Homepage
+Template Name: temp Referenties
 */
 ?>
 
@@ -10,24 +10,19 @@ Template Name: temp Homepage
 		<div class="Content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<div class="page-title">
-					<h2><?php the_title(); ?></h2>
-				</div>
 				<div class="Content-entry">
 <!-- ======================================= -->
 <div class="wrapperblock">
 	<div class="u-gridCol7">
-		<div class="home-title roodig"><p>Welkom bij Romario!</p></div>
+		<div class="home-title blauwig"><p><?php the_title(); ?></p></div>
 		<div class="home-content">
-			<p>Schildersbedrijf Romario staat voor kwalitatief goed schilderwerk op basis van vakmanschap. Onze lijst van tevreden klanten groeit dan ook snel in de regio Den Haag!</p>
-		
-		<p>Als u op zoek bent naar een betrouwbaar, flexibel en betaalbaar schildersbedrijf dat hoogwaardige kwaliteit garandeert en afspraken respecteert dan bent u bij schildersbedrijf Romario sinds 1996 aan het juiste adres.</p>
-		
-		<p>U kunt bij Romario terecht voor al uw binnen- of buiten schilderwerk.</p>
+			<p>We geven u graag een indruk van onze mogelijkheden aan de hand van de foto's en referenties op deze pagina.</p>
+			<p>Binnen en buiten schilderwerk Werkman & Eigentijd.</p>
+			<div class="linky"><a href="http://www.dewerkman.nl/">Website »</a></div>
 		</div>
 	</div>
 
-	<div class="bottom-block rood">
+	<div class="bottom-block blauw">
 		<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
 	</div>
 </div>

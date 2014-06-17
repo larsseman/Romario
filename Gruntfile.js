@@ -103,8 +103,8 @@ module.exports = function (grunt) {
           // Make sure all bower libs are present
           'newer:copy:bower_libs',
           // Beautify, lint and copy js
-          'jsbeautifier:js',
-          'jshint:strict',
+         // 'jsbeautifier:js',
+         // 'jshint:strict',
           'newer:copy:js',
           // Process php
           'newer:copy:php_child',

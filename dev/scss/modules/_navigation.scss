@@ -71,7 +71,7 @@ body {
 .Nav-wrapper {
 	background-color: rgba(255,255,255,0.15);
 	position: relative;
-	height: 180px;
+	height: 160px;
 	padding-top: 1px;
 
 
@@ -115,7 +115,7 @@ body {
 	.Nav-leftstroke {
 		position: absolute;
 		height: 65px;
-		right: -50px;
+		right: -45px;
 		top: 0;
 		
 		img {
@@ -126,7 +126,7 @@ body {
 	.Nav-rightstroke {
 		position: absolute;
 		height: 65px;
-		left: -50px;
+		left: -45px;
 		top: 0;
 		
 		img {
@@ -136,7 +136,7 @@ body {
 	
 	.Nav-menu {
 		float: right;
-		margin-top: 55px;
+		margin-top: 35px;
 		padding-right: 7%;
 		
 		.Navigation-link {
@@ -149,6 +149,19 @@ body {
 
 		.Navigation-listItem {
 			margin: 0 5px;
+			
+			&:nth-of-type(1) {
+				a {	background-color: $c-red;}
+			}
+			&:nth-of-type(2) {
+				a {	background-color: #3B1C1D;}
+			}
+			&:nth-of-type(3) {
+				a {	background-color: #051542;}
+			}
+			&:nth-of-type(4) {
+				a {	background-color: #123527;}
+			}			
 		}
 	}
 }/*-- Nav-wrapper --*/ 
@@ -210,6 +223,8 @@ body {
 	background-color: #fafafa;
 	color: red;
 }
+
+
 
 //=============================================================
 //                  	@media queries

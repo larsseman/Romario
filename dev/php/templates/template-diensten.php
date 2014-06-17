@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: temp Homepage
+Template Name: temp Diensten
 */
 ?>
 
@@ -10,24 +10,20 @@ Template Name: temp Homepage
 		<div class="Content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<div class="page-title">
-					<h2><?php the_title(); ?></h2>
-				</div>
 				<div class="Content-entry">
 <!-- ======================================= -->
 <div class="wrapperblock">
 	<div class="u-gridCol7">
-		<div class="home-title roodig"><p>Welkom bij Romario!</p></div>
+		<div class="home-title bruinig"><p><?php the_title(); ?></p></div>
 		<div class="home-content">
-			<p>Schildersbedrijf Romario staat voor kwalitatief goed schilderwerk op basis van vakmanschap. Onze lijst van tevreden klanten groeit dan ook snel in de regio Den Haag!</p>
-		
-		<p>Als u op zoek bent naar een betrouwbaar, flexibel en betaalbaar schildersbedrijf dat hoogwaardige kwaliteit garandeert en afspraken respecteert dan bent u bij schildersbedrijf Romario sinds 1996 aan het juiste adres.</p>
-		
-		<p>U kunt bij Romario terecht voor al uw binnen- of buiten schilderwerk.</p>
+			<p>Schildersbedrijf Romario is thuis in de meest uiteenlopende schilderwerkzaamheden voor zowel particuliere als zakelijk opdrachtgevers (o.a. aannemers, makelaars), vve's, zorginstellingen en verzekeraars.</p>
+
+<p>Romario is lid van het Sikkens huisschilderplan. Op deze manier bent u verzekerd van vakmensen die weten wat er nodig is voor een resultaat waarover u tevreden zult zijn.</p>
+			<div class="linky"><a href="http://www.sikkens.nl/home">Lees hier meer over het Sikkens huisschilderplan »</a></div>
 		</div>
 	</div>
 
-	<div class="bottom-block rood">
+	<div class="bottom-block bruin">
 		<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
 	</div>
 </div>
