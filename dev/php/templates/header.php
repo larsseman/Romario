@@ -45,6 +45,7 @@
    <!-- Main navigation -->
     <div class="Navigation">
 		<div class="Nav-wrapper">
+			
 			<div class="Toggle-wrap">
 				<div class="Toggle-bar left">
 					<div class="Nav-leftstroke">
@@ -66,8 +67,8 @@
 			</div>
 
 			<div class="Nav-mid-wrapper"></div>
+
 			<div class="u-gridContainer">
-			
 				<div class="Nav-inner-leftWrap">
 					<div class="Nav-mid-wrapper inner">
 						<a href="/home/">
@@ -76,7 +77,7 @@
 							</div>
 						</a>
 						
-						<div class="Nav-leftstroke">
+						<div class="Nav-leftstroke dis-none">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brushstroke-left.png">
 						</div>			
 					</div>
@@ -88,10 +89,11 @@
 			</div>
 			
 			<div class="Nav-mid-wrapper right">
-				<div class="Nav-rightstroke">
+				<div class="Nav-rightstroke dis-none">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brushstroke-right.png">
 				</div>			
 			</div>
+			
 		</div>
 	</div> <!-- Main nav -->
 		

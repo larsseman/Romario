@@ -16,17 +16,16 @@
 	background-color: white;
 	cursor: pointer;
 	float: left;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-left: 6%;
     border-radius: 7px;
-    margin-top: -15px;
-    border: 5px solid white;
+    margin-top: -10px;
+    border: 1px solid black;
 
 	
 	&:hover {
 		background-color: #fafafa;
-		border: 5px solid red;
 	}
 }
 

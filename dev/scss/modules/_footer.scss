@@ -24,11 +24,8 @@
 	}
 }
 
-#text-2, #text-3 {
+.widget {
 	@include span-columns(4);
-}
-#nav_menu-2 {
-	@include span-columns(3);
 } 
 
 .menu {
@@ -61,12 +58,39 @@
 }
 
 
-//---------------------------------------------------------
-.page-id-5 {
-	body {
-		background: rgba(140,0,0,1) !important;	
+
+
+
+//=============================================================
+//                  	@media queries
+//=============================================================
+
+@media all and (max-width: 765px) {
+	.widget {
+		@include span-columns(12);
+		text-align: center;
 	}
-	
+}
+
+@media all and (max-width: 500px) {
+	.copyright p {
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.copyright p {
+		font-size: 11px;
+	}
+}
+
+
+//=============================================================
+//                  Page specific adjustments
+//=============================================================
+
+
+.page-id-5 {
 	.Footer {
 		border-top: 5px solid rgba(140,0,0,1);
 	}
@@ -77,10 +101,6 @@
 }
 
 .page-id-7 {
-	body {
-		background-color: rgba(59,28,29,1) !important;
-	}
-	
 	.Footer {
 		border-top: 5px solid rgba(59,28,29,1);
 	}
@@ -91,10 +111,6 @@
 }
 
 .page-id-9 {
-	body {
-		background-color: rgba(5,22,67,1) !important;
-	}	
-	
 	.Footer {
 		border-top: 5px solid rgba(5,22,67,1);
 	}
@@ -105,15 +121,21 @@
 }
 
 .page-id-11 {
-	body {
-		background-color: rgba(18,54,39,1) !important;
-	}
-	
 	.Footer {
 		border-top: 5px solid rgba(18,54,39,1);
 	}
 	
 	.copyright {
 		background-color: rgba(18,54,39,1);
+	}
+}
+
+.page-id-21 {
+	.Footer {
+		border-top: 5px solid rgba(5,22,67,1);
+	}
+	
+	.copyright {
+		background-color: rgba(5,22,67,1);
 	}
 }

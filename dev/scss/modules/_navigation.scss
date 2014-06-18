@@ -24,7 +24,7 @@
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+  opacity: 0.7;
 }
 
 // -------------------------------------
@@ -138,13 +138,12 @@ body {
 		float: right;
 		margin-top: 35px;
 		padding-right: 7%;
-		
+	
 		.Navigation-link {
 			color: white;
 			background-color: red;
 			padding: 135px 16px 16px;
-			font-size: 12px;
-
+			font-size: 12px;			
 		}
 
 		.Navigation-listItem {
@@ -170,7 +169,6 @@ body {
 .Nav-inner-leftWrap {
 	background-color: white;
 	margin-top: 50px;
-	
 }
 
 
@@ -214,8 +212,6 @@ body {
 		}
 	}
 }
-
-
 
 .Nav-collapse-btn {
 	height: 40px;
@@ -277,11 +273,20 @@ body {
 	.Nav-wrapper .Nav-menu {
 		padding-right: 13%;
 	}
+	
+	.Nav-wrapper .Nav-mid-wrapper.inner {
+		width: 95%;
+	}
+
 }
 
 // ------------------  NAV-wrapp media queries  --------------------
 
 @media all and (max-width:1000px) {
+	.dis-none {
+		display: none;
+	}
+
 	.Nav-wrapper {
 		height: auto;
 		padding-bottom: 20px;
@@ -293,15 +298,20 @@ body {
 			margin-top: 20px;
 			
 			.Navigation-link {
+				display: block;
 				padding: 10px 0;
 				font-size: 16px;
-				display: block;
 				border-radius: 10px;
 			}
 		}
 		
-		.Nav-mid-wrapper.inner {
+		.Nav-mid-wrapper {
 			width: 100%;
+			border-bottom: 1px solid;
+			border-top: 1px solid;
+			a {
+				text-decoration: none;
+			}
 		}
 		.Navigation-list {
 			margin: 0;
@@ -310,9 +320,28 @@ body {
 	
 	.Toggle-wrap {
 		display: block;
+		
+		.Toggle-bar.right {
+			border: 1px solid;
+			.Nav-rightstroke img  {
+				height: 38px;
+			}
+		}
+		.Toggle-bar.left {
+			border: 1px solid;
+			.Nav-leftstroke img  {
+				height: 38px;
+			}
+		}
 	}
 	
 	.Nav-inner-leftWrap {
 		margin-top: 0;
+	}
+}
+
+@media all and (max-width:1000px) {
+	.Nav-leftstroke, Nav-rightstroke {
+	//	display: none;
 	}
 }
