@@ -43,6 +43,7 @@
   </head>
   <body <?php body_class(); ?> >
    <!-- Main navigation -->
+   
     <div class="Navigation">
 		<div class="Nav-wrapper">
 			
@@ -55,7 +56,9 @@
 				
 				<div class="Nav-toggle">
 					<a class="Navigation-menuToggle" id="js-navCollapse">
-						<img src="" class="menu">
+						<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+							<use xlink:href="#icon-menu2"></use>
+						</svg>
 					</a>
 				</div>
 				
