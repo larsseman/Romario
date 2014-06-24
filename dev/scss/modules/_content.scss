@@ -148,6 +148,16 @@ input.gform_button {
 //----------------------------------------
 
 
+.app-iphone {
+	img {
+		max-width: 265px;
+	}
+}
+
+.app-google {
+	margin-top: 30px;
+}
+
 
 a.linky {
 	color: $c-red !important;
@@ -203,9 +213,15 @@ a.linky {
 	.adress-info p {
 		text-align: center;
 	}
-
 }
 
+@media all and (max-width:400px) {
+	.home-title {
+		p,h2 {
+			text-align: center;
+		}
+	}
+}
 
 //=============================================================
 //                  Page specific adjustments

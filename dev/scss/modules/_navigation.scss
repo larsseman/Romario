@@ -69,13 +69,7 @@
 body {
 	background-color: #787878 !important;
 }
-
-.Icon.Icon--inline {
-	fill: #ccc;
-	height: 50px;
-	width: 50px;
-} 
-
+ 
 
 .Nav-wrapper {
 	background-color: rgba(255,255,255,0.15);
@@ -99,8 +93,12 @@ body {
 				color: black;
 				font-size: 25px;
 				line-height: 10px;
-				font-weight: 200;
+				font-weight: 200;				
 			}				
+		}
+		
+		.logo-linky {
+			text-decoration: none;
 		}
 		
 		.logo-name-span {	
@@ -288,13 +286,90 @@ body {
 
 }
 
+
+@media all and (max-width:670px) {
+	.Toggle-wrap .Toggle-bar {
+		width: 39%;
+	}
+}
+
+@media all and (max-width:570px) {
+	.Toggle-wrap .Toggle-bar {
+		width: 38%;
+	}
+}
+
+@media all and (max-width:470px) {
+	.Toggle-wrap .Toggle-bar {
+		width: 37%;
+	}
+}
+
+@media all and (max-width:400px) {
+	.Toggle-wrap .Toggle-bar {
+		width: 15%;
+	}
+	
+	.Navigation-menuToggle {
+		margin-left: 27% !important;
+	}
+}
+
+@media all and (max-width:300px) {
+	.Navigation-menuToggle {
+		margin-left: 24% !important;
+	}
+}
+
 // ------------------  NAV-wrapp media queries  --------------------
 
 @media all and (max-width:1000px) {
 	.dis-none {
 		display: none;
 	}
-
+	
+	.Navigation-link.is-active {
+	  opacity: 1;
+	  padding: 5px 0;
+	  background-color: white;	  
+	}
+	
+	.Navigation-listItem {		
+		&:nth-of-type(1) {
+			a.Navigation-link.is-active {
+				background-color: white;
+				border: 5px solid $c-red;
+				color: $c-red;
+				font-weight: 600;
+			}
+		}
+		&:nth-of-type(2) {
+			a.Navigation-link.is-active {
+				background-color: white;
+				border: 5px solid #3B1C1D;
+				color: #3B1C1D;
+				font-weight: 600;
+			}
+		}
+		&:nth-of-type(3) {
+			a.Navigation-link.is-active {
+				background-color: white;
+				border: 5px solid #051542;
+				color: #051542;
+				font-weight: 600;
+			}
+		}
+		&:nth-of-type(4) {
+			a.Navigation-link.is-active {
+				background-color: white;
+				border: 5px solid #123527;
+				color: #123527;
+				font-weight: 600;
+			}
+		}			
+	}
+	
+	
 	.Nav-wrapper {
 		height: auto;
 		padding-bottom: 20px;
@@ -356,24 +431,40 @@ body {
 	.page-id-5 {
 		.Nav-wrapper {
 			background-color: rgba(140,0,0,0.2);
+			
+			.Icon.Icon--inline {
+				fill: rgba(140,0,0,1);
+			}
 		}
 	}
 	
 	.page-id-7 {
 		.Nav-wrapper {
 			background-color: rgba(59,28,29,0.2);
+
+			.Icon.Icon--inline {
+				fill: rgba(59,28,29,1);
+			}
 		}
 	}
 	
 	.page-id-9 {
 		.Nav-wrapper {
 			background-color: rgba(5,21,67,0.2);
+
+			.Icon.Icon--inline {
+				fill: rgba(5,21,67,1);
+			}
 		}
 	}
 
 	.page-id-11 {
 		.Nav-wrapper {
 			background-color: rgba(18,54,38,0.2);
+
+			.Icon.Icon--inline {
+				fill: rgba(18,54,38,1);
+			}
 		}
 	}
 }

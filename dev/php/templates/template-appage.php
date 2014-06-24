@@ -18,21 +18,21 @@ Template Name: Page app page
 		<p>Nu kan er ook gemakkelijk naar informatie over ons bedrijf worden gezocht via de mobiele website van Romario schilders! De app is beschikbaar in Google Play voor Android apparaten en als webap voor IOS (de smartphone van Apple).</p>
 
 		<p>Voor Apple iPhone gebruikers: scan de QR-code of surf naar <a class="linky normaal" href="http://romario-schilders.lokaalgevonden.nl">www.romario-schilders.nl</a>, je krijgt dan een melding ‘plaats deze link naar deze mobiele site’. Tik op ‘zet in de je beginscherm’.</p>
-
-		<div class="app-iphone">
-			<a href="#">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone.png" alt="" />
+		
+		<div class="u-gridRow">
+		<div class="app-iphone u-gridCol4">
+			<a href="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone5.png">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone5.png" alt="" />
 			</a>
 		</div>
 		
-		<div class="app-google">
+		<div class="app-google u-gridCol4">
 			<a href="#">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.jpg" alt="" />
 			</a>
-		</div>
-		
-		<img src="#" alt="" />
 
+			<img src="#" alt="" />
+		</div>
 	</div>
 </div>
 

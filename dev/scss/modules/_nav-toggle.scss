@@ -28,8 +28,19 @@
 }
 
 
+.Icon.Icon--inline {
+	font-size: 35px;
+//    fill: #8C0000;
+    height: 40px;
+    width: 40px;
+    margin-top: 12px;
+} 
+
+
 #js-navCollapseTarget {
   @media all and (max-width: 1000px) {
     display: none;
   }
 }
+
+

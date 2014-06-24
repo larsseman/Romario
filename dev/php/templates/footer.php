@@ -12,7 +12,7 @@
 
 	<!-- Copyright info -->
 	<div class="copyright">
-		<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Gemaakt door <a href="http://lokaalgevonden.nl">Lokaalgevonden</a>.</p>
+		<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Gemaakt door <a target="_blank" href="http://lokaalgevonden.nl">Lokaalgevonden</a>.</p>
 	</div>
 	
   <!-- Load jquery from google CDN if possible, with fallback to cdnjs -->
