@@ -427,6 +427,15 @@ body {
 	.Nav-leftstroke, Nav-rightstroke {
 	//	display: none;
 	}
+
+	.Nav-wrapper {
+		background-color: rgba(140,0,0,0.2);
+		
+		.Icon.Icon--inline {
+			fill: rgba(140,0,0,1);
+		}
+	}
+
 	
 	.page-id-5 {
 		.Nav-wrapper {
