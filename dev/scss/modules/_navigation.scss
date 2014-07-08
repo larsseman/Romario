@@ -227,6 +227,58 @@ body {
 }
 
 
+.rightstroke-relativeBlock {
+	position: relative;
+	
+	a:hover {
+		opacity: 0.7;
+	}
+	
+	.relativeBlock-content {
+		position: absolute;
+		left: 15px;
+		top: 2px;
+		width: 50px;
+		p {
+			color: white;
+			line-height: 0px;
+			font-size: 15px;
+		}
+		
+		img {
+			position: absolute;
+			width: 30px;
+			height: 20px;
+			top: 5px;
+			left: 58px;
+		}
+	}
+}
+
+
+.rightstroke-relativeBlock.sec {
+	display: none;
+}
+
+.top-tel {
+	background-image: url('../img/tel-red.png');
+	background-repeat: no-repeat;
+	background-color: white;
+	position: absolute;
+	display: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 200px;
+	right: 105px;
+	top: 10px;
+	background-size: 23px;
+	background-position: 4px;
+	
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
 
 //=============================================================
 //                  	@media queries
@@ -323,9 +375,28 @@ body {
 
 // ------------------  NAV-wrapp media queries  --------------------
 
+
+@media all and (max-width: 400px) {
+
+}
+
+
+
+
 @media all and (max-width:1000px) {
 	.dis-none {
 		display: none;
+	}
+
+	.rightstroke-relativeBlock.sec {
+		display: block;
+		position: absolute;
+		right: 110px;
+		top: 7px;
+	}
+
+	.top-tel {
+		display: block;
 	}
 	
 	.Navigation-link.is-active {
@@ -437,7 +508,7 @@ body {
 	}
 
 	
-	.page-id-5 {
+	.page-id-5 {	
 		.Nav-wrapper {
 			background-color: rgba(140,0,0,0.2);
 			
@@ -448,6 +519,10 @@ body {
 	}
 	
 	.page-id-7 {
+		.top-tel {
+			background-image: url('../img/tel-brown.png');
+		}
+
 		.Nav-wrapper {
 			background-color: rgba(59,28,29,0.2);
 
@@ -458,6 +533,10 @@ body {
 	}
 	
 	.page-id-9 {
+		.top-tel {
+			background-image: url('../img/tel-blue.png');
+		}
+
 		.Nav-wrapper {
 			background-color: rgba(5,21,67,0.2);
 
@@ -468,6 +547,10 @@ body {
 	}
 
 	.page-id-11 {
+		.top-tel {
+			background-image: url('../img/tel-green.png');
+		}
+
 		.Nav-wrapper {
 			background-color: rgba(18,54,38,0.2);
 

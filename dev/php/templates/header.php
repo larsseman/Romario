@@ -46,6 +46,19 @@
    
     <div class="Navigation">
 		<div class="Nav-wrapper">
+
+			<div class="rightstroke-relativeBlock sec">
+				<a href="#">
+					<div class="relativeBlock-content">
+						<p>English</p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/english-flag.png">
+					</div>
+				</a>
+			</div>
+
+			<a href="tel:0703293610">
+				<div class="top-tel"></div>
+			</a>
+
 			
 			<div class="Toggle-wrap">
 				<div class="Toggle-bar left">
@@ -94,6 +107,13 @@
 			<div class="Nav-mid-wrapper right">
 				<div class="Nav-rightstroke dis-none">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brushstroke-right.png">
+					<div class="rightstroke-relativeBlock">
+						<a href="#">
+							<div class="relativeBlock-content">
+								<p>English</p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/english-flag.png">
+							</div>
+						</a>
+					</div>
 				</div>			
 			</div>
 			
