@@ -121,23 +121,23 @@ body {
 	
 	.Nav-leftstroke {
 		position: absolute;
-		height: 65px;
+		height: 66px;
 		right: -45px;
 		top: 0;
 		
 		img {
-			height: 65px;
+			height: 66px;
 		}
 	}
 	
 	.Nav-rightstroke {
 		position: absolute;
-		height: 65px;
+		height: 66px;
 		left: -45px;
 		top: 0;
 		
 		img {
-			height: 65px;
+			height: 66px;
 		}
 	}
 	
@@ -474,17 +474,18 @@ body {
 		}
 	}
 	
+	
 	.Toggle-wrap {
 		display: block;
 		
 		.Toggle-bar.right {
 			.Nav-rightstroke img  {
-				height: 40px;
+				height: 41px;
 			}
 		}
 		.Toggle-bar.left {
 			.Nav-leftstroke img  {
-				height: 40px;
+				height: 41px;
 			}
 		}
 	}
