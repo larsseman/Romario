@@ -43,6 +43,20 @@ module.exports = function (grunt) {
     'build:child:expanded',
     'rsync:init_deploy_child'
   ]);
+  
+   grunt.registerTask('reinit', 'Re-initialize the development environment, build and deploy child theme.', [
+    // Show warnings
+    //'attention:ftppass_reminder', // not needed when not using FTP
+    // Ask for necessary variables and process them
+    'mkdir:init',
+    // Install and process bower libs
+    'exec:bower_install',
+    'copy:bower_libs',
+    // Build child theme
+    'build:child:expanded',
+    'rsync:init_deploy_child'
+  ]);
+
 
   // ----- Grunt develop ----- //
 

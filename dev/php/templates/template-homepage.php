@@ -10,30 +10,26 @@ Template Name: temp Homepage
 		<div class="Content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<div class="page-title">
-					<h2><?php the_title(); ?></h2>
-				</div>
 				<div class="Content-entry">
 <!-- ======================================= -->
 <div class="wrapperblock">
 	<div class="u-gridCol7">
-		<div class="home-title roodig"><p>Welkom bij Romario!</p></div>
+		<div class="home-title roodig"><p><?php the_title(); ?></p></div>
 		<div class="home-content">
-			<p>Schildersbedrijf Romario staat voor kwalitatief goed schilderwerk op basis van vakmanschap. Onze lijst van tevreden klanten groeit dan ook snel in de regio Den Haag!</p>
-		
-		<p>Als u op zoek bent naar een betrouwbaar, flexibel en betaalbaar schildersbedrijf dat hoogwaardige kwaliteit garandeert en afspraken respecteert dan bent u bij schildersbedrijf Romario sinds 1996 aan het juiste adres.</p>
-		
-		<p>U kunt bij Romario terecht voor al uw binnen- of buiten schilderwerk.</p>
+			<?php the_content(); ?>
 		</div>
 	</div>
 
 	<div class="bottom-block rood">
-		<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
+		<p>
+			<?php include_once('slogan.php'); ?>
+
+		</p> 
 	</div>
 </div>
 
 <!-- ======================================= -->
-					<?php the_content(); ?>
+					<?php //the_content(); ?>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</div>
 			</article>

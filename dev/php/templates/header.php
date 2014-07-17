@@ -50,7 +50,7 @@
 			<div class="rightstroke-relativeBlock sec">
 				<a href="#">
 					<div class="relativeBlock-content">
-						<p>English</p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/english-flag.png">
+						<?php do_action('icl_language_selector'); ?>
 					</div>
 				</a>
 			</div>
@@ -110,7 +110,8 @@
 					<div class="rightstroke-relativeBlock">
 						<a href="#">
 							<div class="relativeBlock-content">
-								<p>English</p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/english-flag.png">
+								<?php do_action('icl_language_selector'); ?>
+							<!-- 	<p>English</p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/english-flag.png"> -->
 							</div>
 						</a>
 					</div>

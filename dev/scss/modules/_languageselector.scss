@@ -1,0 +1,36 @@
+#lang_sel_list ul > a, #lang_sel_list > ul > li > a {
+	display: none !important;
+}
+
+#lang_sel_list > ul > li > a.lang_sel_other,
+#lang_sel_list > ul > li > a.lang_sel_sel
+{
+	display: block !important;
+	background-color: transparent;
+	border: 0px solid black;
+}
+
+#lang_sel_list ul, #lang_sel_list > a  
+
+{
+	border: 0px solid black;
+
+}
+
+
+#lang_sel_list img.iclflag {
+	position: static !important;
+
+}
+
+#lang_sel_list li {
+	width: auto !important;
+
+	a {
+		color: #fff !important;
+	}
+}
+
+#lang_sel_list ul a {
+	padding: 1px 10px !important;
+}

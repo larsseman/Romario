@@ -24,7 +24,14 @@ Template Name: Landingspagina
 				</div> <!-- content-text -->
 
 				<div class="bottom-block rood">
-					<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
+					<p>
+						<?php if(strpos($a,'/en') !== false) { ?>
+						Romario has been providing professional paint services since 1996 and has experience with all painting systems.
+						<?php } else { ?>
+						Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.
+						<?php } ?>
+
+					</p>
 				</div>
 
 			</div>

@@ -16,19 +16,18 @@ Template Name: temp Referenties
 	<div class="u-gridCol7">
 		<div class="home-title blauwig"><p><?php the_title(); ?></p></div>
 		<div class="home-content">
-			<p>We geven u graag een indruk van onze mogelijkheden aan de hand van de foto's en referenties op deze pagina.</p>
-			<p>Binnen en buiten schilderwerk Werkman & Eigentijd.</p>
-			<div class="linky"><a href="http://www.dewerkman.nl/">Website »</a></div>
+			<?php the_content(); ?>		
 		</div>
 	</div>
 
 	<div class="bottom-block blauw">
-		<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
+	<p><?php include_once('slogan.php'); ?></p>
+
 	</div>
 </div>
 
 <!-- ======================================= -->
-					<?php the_content(); ?>
+					<?php //the_content(); ?>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</div>
 			</article>

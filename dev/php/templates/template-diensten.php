@@ -16,20 +16,19 @@ Template Name: temp Diensten
 	<div class="u-gridCol7">
 		<div class="home-title bruinig"><p><?php the_title(); ?></p></div>
 		<div class="home-content">
-			<p>Schildersbedrijf Romario is thuis in de meest uiteenlopende schilderwerkzaamheden voor zowel particuliere als zakelijk opdrachtgevers (o.a. aannemers, makelaars), vve's, zorginstellingen en verzekeraars.</p>
-
-<p>Romario is lid van het Sikkens huisschilderplan. Op deze manier bent u verzekerd van vakmensen die weten wat er nodig is voor een resultaat waarover u tevreden zult zijn.</p>
-			<div class="linky"><a href="http://www.sikkens.nl/home">Lees hier meer over het Sikkens huisschilderplan »</a></div>
+			<?php the_content(); ?>
 		</div>
 	</div>
 
 	<div class="bottom-block bruin">
-		<p>Schildersbedrijf Romario levert ambachtelijk vakwerk sinds 1996 en heeft kennis van alle verfsystemen.</p>
+		<p>
+			<?php include_once('slogan.php'); ?>
+</p>
 	</div>
 </div>
 
 <!-- ======================================= -->
-					<?php the_content(); ?>
+					<?php //the_content(); ?>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</div>
 			</article>
