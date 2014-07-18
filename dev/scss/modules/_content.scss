@@ -72,6 +72,11 @@ p {
 	margin-top: 15px;
 }
 
+.home-slider {
+    background-color: rgba(255,255,255,0.8);
+	margin-top: 15px;
+}
+
 .bottom-block {
 	float: right;
 	padding: 0 20px;
@@ -181,7 +186,7 @@ a.linky {
 		background-repeat: repeat;
 		background-size: auto;
 	}
-	.u-gridCol7 {
+	.u-gridCol7, .u-gridCol5 {
 		@include span-columns(12);	
 	}
 	
